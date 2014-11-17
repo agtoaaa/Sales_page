@@ -498,7 +498,7 @@ h1 {
 .fact-img {
   margin-right: 10px; }
 
-.intro form input {
+form input {
   width: 100%;
   height: 100px;
   background-color: #F8C300;
@@ -796,37 +796,43 @@ main {
   .test-mo:last-child {
     margin-right: 0%; }
 
+.signupf {
+  *zoom: 1;
+  width: auto;
+  max-width: 800px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  .signupf:before, .signupf:after {
+    content: '';
+    display: table; }
+  .signupf:after {
+    clear: both; }
+
 @media (max-width: 640px) {
-  .intro {
+  .intro, .infact, .middle-master, .test-mo, .bluemaster, .first-content, .cantmiss, .cantmiss-2 {
     display: block;
     clear: both;
     float: none;
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
-    .intro:first-child {
+    .intro:first-child, .infact:first-child, .middle-master:first-child, .test-mo:first-child, .bluemaster:first-child, .first-content:first-child, .cantmiss:first-child, .cantmiss-2:first-child {
       margin-left: auto; }
-    .intro:last-child {
+    .intro:last-child, .infact:last-child, .middle-master:last-child, .test-mo:last-child, .bluemaster:last-child, .first-content:last-child, .cantmiss:last-child, .cantmiss-2:last-child {
       margin-right: auto; }
-  .middle-master {
+  .allfacts {
     display: block;
     clear: both;
     float: none;
     width: 100%;
     margin-left: auto;
-    margin-right: auto; }
-    .middle-master:first-child {
+    margin-right: auto;
+    display: none; }
+    .allfacts:first-child {
       margin-left: auto; }
-    .middle-master:last-child {
-      margin-right: auto; }
-  .test-mo {
-    display: block;
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-    .test-mo:first-child {
-      margin-left: auto; }
-    .test-mo:last-child {
+    .allfacts:last-child {
       margin-right: auto; } }
