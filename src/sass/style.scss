@@ -64,6 +64,9 @@ main {
 .bluemaster {
 	@include span(1/3);
 }
+.perfectmen {
+	@include span(1/3);
+}
 .arrow {
 	@include center(50px);
 	top:50px;
@@ -112,7 +115,7 @@ main {
 
 
 @media (max-width:640px){
-	.intro, .infact, .middle-master, .test-mo, .bluemaster, .first-content, .cantmiss, .cantmiss-2 {
+	.intro, .infact, .middle-master, .test-mo, .bluemaster, .first-content, .cantmiss, .cantmiss-2, .perfectmen {
 		@include stack;
 	}
 	.allfacts {
