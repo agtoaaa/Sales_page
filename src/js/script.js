@@ -1,40 +1,152 @@
-(function() {
-	function toggleClass(element, className){
-	    if (!element || !className) {
-	        return;
-	    }
-	    
-	    var classString = element.className, nameIndex = classString.indexOf(className);
-	    if (nameIndex == -1) {
-	        classString += ' ' + className;
-	    }
-	    else {
-	        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
-	    }
-	    element.className = classString;
-	}
+/*this is the top script*/
 
-	// Open slideout menu
-	document.getElementById('js-hamburger').addEventListener('click', function() {
-	    toggleClass(document.getElementById('js-nav'), 'nav-open');
-	});
+$(document).ready(function() {
+    $(".expand-list").click(function() {
+        $(this).find(".object").slideToggle();
+    });
+    var $root = $('html, body');
+    $('a').click(function() {
+        if ($.attr(this, 'href').indexOf("#") != -1 && $.attr(this, 'href') != "#") {
+            $root.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 4000);
+            return false;
+        }
+    });
 
-	// Close slideout menu
-	document.getElementById('js-close').addEventListener('click', function() {
-		toggleClass(document.getElementById('js-nav'), 'nav-open');
-	});
+});
 
-	// Mobile dropdown
-	var mobileDropLink = document.getElementById('js-nav-mobile-dropdown');
+$(window).scroll(function() {
+    $('.middle-master').each(function() {
+        var imagePos = $(this).offset().top;
 
-	mobileDropLink.addEventListener('click', function() {
-		toggleClass(document.getElementById('js-nav-mobile-sub'), 'mobile-nav-sub-show');
-	});
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideUp");
+        }
+    });
+    $('.color-belt').each(function() {
+        var imagePos = $(this).offset().top;
 
-	// Mobile dropdown back button
-	var back = document.getElementById('js-nav-back');
-	back.addEventListener('click', function() {
-		toggleClass(document.getElementById('js-nav-mobile-sub'),'mobile-nav-sub-show');
-	});
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("expandOpen");
+        }
+    });
+});
+$(window).scroll(function() {
+    $('.knowhow').each(function() {
+        var imagePos = $(this).offset().top;
 
-}());
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideUp");
+        }
+    });
+});
+$(window).scroll(function() {
+    $('.bluemaster').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideLeft");
+        }
+    });
+    $('.livein').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideRight");
+        }
+    });
+    $('.first-second-content').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideLeft");
+        }
+    });
+});
+$(window).scroll(function() {
+    $('.cantmiss').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideLeft");
+        }
+    });
+});
+$(window).scroll(function() {
+    $('.cantmiss-2').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideRight");
+        }
+    });
+});
+$(window).scroll(function() {
+    $('.perfectmen').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideRight");
+        }
+    });
+    $('.testi').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideDown");
+        }
+    });
+    $('.doctorsay').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideDown");
+        }
+    });
+    $('.tri-work').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideDown");
+        }
+    });
+    $('.intro').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideDown");
+        }
+    });
+    $('.core-value').each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideUp");
+        }
+    });
+    $('.arrow').mouseover(function() {
+    $(this).addClass("hatch");
+});
+$('.arrow').mouseout(function() {
+    $(this).removeClass("hatch");
+});
+
+});
+
+
+
