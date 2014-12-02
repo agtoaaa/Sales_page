@@ -10,6 +10,13 @@
 	<link rel="stylesheet" href="css/style.min.css" />
 	<title>Sales Page</title>
 	<script src="js/script.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		$(".expand-list").click(function() {
+	        $(this).find(".object").slideToggle();
+	    });
+	});	
+    </script>
 
 
 </head>
@@ -18,7 +25,7 @@
 <body>
 	<header>
 		<div class=".header "><img class="" src="img/header.png" width="100%"></div>
-	</header>
+			</header>
 	<main class="mt-small">
 		<div class="intro hidden"><img class="" src="img/ebook.png" width="100%">
 			<form>
