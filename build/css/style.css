@@ -461,6 +461,9 @@ td, th {
 * {
   box-sizing: border-box; }
 
+.mt-x-small {
+  margin-top: 5%; }
+
 .mt-small {
   margin-top: 10%; }
 
@@ -507,6 +510,119 @@ form input {
   color: white;
   border: none;
   padding: 20px; }
+
+@media (max-width: 640px) {
+  .panda {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .panda:first-child {
+      margin-left: auto; }
+    .panda:last-child {
+      margin-right: auto; } }
+
+.k-header {
+  *zoom: 1;
+  width: auto;
+  max-width: 1;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background-size: cover;
+  position: relative;
+  padding: 0px; }
+  .k-header:before, .k-header:after {
+    content: '';
+    display: table; }
+  .k-header:after {
+    clear: both; }
+
+.panda {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  position: relative; }
+  .panda:before, .panda:after {
+    content: '';
+    display: table; }
+  .panda:after {
+    clear: both; }
+  .panda:last-child {
+    margin-right: 0%; }
+
+.full {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .full:before, .full:after {
+    content: '';
+    display: table; }
+  .full:after {
+    clear: both; }
+  .full:last-child {
+    margin-right: 0%; }
+
+.half {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .half:before, .half:after {
+    content: '';
+    display: table; }
+  .half:after {
+    clear: both; }
+  .half:last-child {
+    margin-right: 0%; }
+
+.one-third {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .one-third:before, .one-third:after {
+    content: '';
+    display: table; }
+  .one-third:after {
+    clear: both; }
+  .one-third:last-child {
+    margin-right: 0%; }
+
+.two-third {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .two-third:before, .two-third:after {
+    content: '';
+    display: table; }
+  .two-third:after {
+    clear: both; }
+  .two-third:last-child {
+    margin-right: 0%; }
 
 header {
   *zoom: 1;
